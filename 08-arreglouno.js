@@ -18,6 +18,7 @@ function cambioTercera(array, nombreDos){
 const array = ["Pedro", "Pablo", "María", "Juan", "Diana"];
 console.log(array);
 
+console.log(`\nEl programa triste:\n`)
 let nombreUno = prompt(`Ingrese un nombre: `);
 let nombreDos = prompt(`Ingrese otro nombre: `);
 
