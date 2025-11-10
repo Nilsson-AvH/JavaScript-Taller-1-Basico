@@ -6,7 +6,7 @@ const prompt = require("prompt-sync")({sigint: true});
 function multiplo (numero){
 
     if (!/^[1-9]\d*$/.test(numero)) {
-        console.log('\nDigite un número positivo válido o que no inicie en 0.');
+        console.log('\nNo, es en serio?\nDigite un número positivo válido o que no inicie en 0.');
         return;
     }
 
@@ -25,6 +25,7 @@ function multiplo (numero){
     }
 }
 
-let elNumero = prompt(`Digite un numero y yo le diré si es multiplo de 5: `);
+console.log(`\nEl hiper mega calcualdor de multiplos de 5:\n`)
+let elNumero = prompt(`Digite un numero y yo te diré si es multiplo de 5: `);
 
 multiplo(elNumero);

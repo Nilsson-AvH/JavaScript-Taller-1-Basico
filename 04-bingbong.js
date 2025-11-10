@@ -10,7 +10,7 @@ const prompt = require("prompt-sync")({sigint:true});
 function validation(numero){
 
     if (!/^[1-9]\d*$/.test(numero)) {
-        console.log('\nDigite un número positivo válido o que no inicie en 0.');
+        console.log('\nEn serio?\nDigite un número positivo válido o que no inicie en 0.');
         return;
     }
 
@@ -32,6 +32,7 @@ function validation(numero){
 
 }
 
+console.log(`\nEl mega play BingBong:\n`)
 let elNumero = prompt(`Digite el numero a validar BingBong: `)
 
 validation(elNumero);

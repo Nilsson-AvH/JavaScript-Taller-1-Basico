@@ -11,7 +11,7 @@ function edad (anioNacimiento, nombre) {
     let anioNacimientoNum = parseInt(anioNacimiento);
 
     if(isNaN(anioNacimientoNum) || anioNacimientoNum < 1900 || anioNacimientoNum > anioActual) {
-        console.log(`\nError\nDigite un año correcto entre 1900 y 2020.`);
+        console.log(`\nDe verdad?\nDigite un año correcto entre 1900 y 2020.`);
         return;
     }
 
@@ -19,6 +19,7 @@ function edad (anioNacimiento, nombre) {
     console.log(`\nHola ${nombre}, grandioso! Tienes ${edad} años.`)
 }
 
+console.log(`\nLa super-calcualdora mega automatica y poderosa de años:\n`)
 let laEdad = prompt(`Digite su año de nacimiento: `);
 let elNombre = prompt(`Digite su nombre: `);
 

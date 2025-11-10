@@ -12,6 +12,7 @@ function diezVeces (frase){
 
 }
 
+console.log(`\nEl super poderoso convertidor Diez:\n`)
 let laFrase = prompt(`Digite una frase, el convertidor la repetirá 10 veces: `)
 
 diezVeces(laFrase)

@@ -3,11 +3,22 @@
 //suma de los dos números ingresados.
 
 const prompt = require('prompt-sync')({sigint: true});
+
 function sum (num1, num2) {
-    return num1 + num2;
+
+    if (!/^[1-9]\d*$/.test(num1) || !/^[1-9]\d*$/.test(num2)) {
+        console.log('\nEn serio?\nDigite un número positivo válido o que no inicie en 0.');
+        return;
+    }
+
+    let num1Num = parseInt(num1);
+    let num2Num = parseInt(num2);
+
+    console.log(`\nLa suma de ${num1Num} y ${num2Num} es: ${num1Num+num2Num}`);
 }
 
+console.log(`\nLa sumadora Cosmica:\n`)
 let num1 = parseInt(prompt(`Ingrese el primer numero a sumar: `));
 let num2 = parseInt(prompt(`Ingrese el segudo numero a sumar: `));
 
-console.log(`La suma de ${num1} y ${num2} es: ${sum(num1, num2)}`);
+sum(num1, num2)
