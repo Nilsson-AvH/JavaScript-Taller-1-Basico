@@ -2,7 +2,7 @@
 //luego pide un segundo número e imprime en la consola la 
 //suma de los dos números ingresados.
 
-const prompt = require('prompt-sync')({sigint: true});
+//const prompt = require('prompt-sync')({sigint: true});
 
 function sum (num1, num2) {
 
@@ -11,10 +11,7 @@ function sum (num1, num2) {
         return;
     }
 
-    let num1Num = parseInt(num1);
-    let num2Num = parseInt(num2);
-
-    console.log(`\nLa suma de ${num1Num} y ${num2Num} es: ${num1Num+num2Num}`);
+    console.log(`\nLa suma de ${num1} y ${num2} es: ${num1+num2}`);
 }
 
 console.log(`\nLa sumadora Cosmica:\n`)

@@ -2,7 +2,7 @@
 // imprima en la consola los números en ese rango. Por ejemplo, si el usuario 
 // ingresa 5 como primer número y 10 como segundo número.
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function superRango(num1,num2) {
     if (!/^[1-9]\d*$/.test(num1) || !/^[1-9]\d*$/.test(num2)) {

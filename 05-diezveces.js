@@ -2,7 +2,7 @@
 // l programa debe imprimir la frase en la consola 10 veces.
 // NOTA: utiliza un ciclo para imprimir la frase las 10 veces.
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function diezVeces (frase){
 

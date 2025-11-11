@@ -3,7 +3,7 @@
 //Pídele al usuario que ingrese otro nombre y reemplaza la tercera posición del arreglo con este valor.
 //Recorre el arreglo e imprímelo.
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function ingresoFinal(array, nombreUno){
     array.push(nombreUno);
@@ -25,4 +25,7 @@ let nombreDos = prompt(`Ingrese otro nombre: `);
 const arrayIngreso = ingresoFinal(array, nombreUno);
 //console.log(arrayIngreso);
 const arrayFinal = cambioTercera(arrayIngreso, nombreDos);
-console.log(arrayFinal);
+
+for (const gato of arrayFinal){
+    console.log(`> ${gato}`);
+}

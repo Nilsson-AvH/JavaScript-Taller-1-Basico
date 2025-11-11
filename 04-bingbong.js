@@ -5,7 +5,7 @@
 //    Si el número es múltiplo tanto de 3 como de 5 debe imprimir en la consola bingbong.
 //    Si no cumple ninguna de las condiciones anteriores debe imprimir el mismo número.
 
-const prompt = require("prompt-sync")({sigint:true});
+//const prompt = require("prompt-sync")({sigint:true});
 
 function validation(numero){
 
@@ -15,24 +15,20 @@ function validation(numero){
     }
 
     let numeroNum = parseInt(numero);
+    let message = ``;
 
-    if ( numeroNum % 3 == 0 && numeroNum % 5 == 0 ) {
+    if( numeroNum % 3 == 0 )
+        message += 'bing';      // message = message + 'bing';
+    if( numeroNum % 5 == 0 ) 
+        message += 'bong';      // message = message + 'bong';
 
-        console.log(`BingBong!`);
-    }else if ( numeroNum % 3 == 0 ) {
-
-        console.log(`Bing!`);
-    }else if ( numeroNum % 5 == 0 ) {
-
-        console.log(`Bong!`);
-    }else {
-
-        console.log(numeroNum);
-    }
-
+    if( !message )
+        console.log( numeroNum );
+    else
+        console.log( message );
 }
 
 console.log(`\nEl mega play BingBong:\n`)
 let elNumero = prompt(`Digite el numero a validar BingBong: `)
 
-validation(elNumero);
+console.log(validation(elNumero));

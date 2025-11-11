@@ -1,3 +1,4 @@
+//const prompt = require("prompt-sync")({sigint: true});
 
 function contarUnos(nums){
     let contadorUnos = 0;

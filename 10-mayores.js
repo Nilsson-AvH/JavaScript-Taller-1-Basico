@@ -1,3 +1,5 @@
+//const prompt = require("prompt-sync")({sigint: true});
+
 function mayor(nums){
     for (let i = 0; i < nums.length; i++) {
         if (nums[i] > 10) {
@@ -6,7 +8,7 @@ function mayor(nums){
     }
 }
 
-const nums = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, 39];
+const nums = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, ,49, 6, 39];
 
 console.log(`\nEste super programa imprimira los valores del siguiente arreglo que sean mayores a 10:`);
 console.log(`${nums}`);

@@ -3,7 +3,7 @@
 //Elimine el segundo elemento.
 //Recorra e imprima el arreglo.
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function creaArreglo(num){
     if (!/^[1-9]\d*$/.test(num)) {
@@ -37,4 +37,7 @@ let elArreglo = creaArreglo(num);
 //console.log(typeof elArreglo);
 
 let elArregloModificado = modificaArreglo(elArreglo);
-console.log(elArregloModificado);
+
+for (let gato of elArregloModificado){
+    console.log(`> ${gato}`);
+}

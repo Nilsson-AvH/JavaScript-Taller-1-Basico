@@ -1,7 +1,7 @@
 //Escribe un programa que le pida al usuario un 
 // número e imprima si es un múltiplo de 5 o no.
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function multiplo (numero){
 
@@ -19,9 +19,9 @@ function multiplo (numero){
 */
     let residuo = numeroNum % 5 ;
     if(residuo == 0){
-        console.log(`\nEl numero ${numeroNum} es multiplo de 5.`);
+        console.log(`\nSi, el número ${numeroNum} es múltiplo 5.`);
     } else {
-        console.log(`\nEl numero ${numeroNum} NO es multiplo de 5.`);
+        console.log(`\nNO, el número ${numeroNum} no es múltiplo 5.`);
     }
 }
 

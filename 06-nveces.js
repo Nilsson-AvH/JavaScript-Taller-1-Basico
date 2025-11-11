@@ -4,7 +4,7 @@
 //la frase Hola Mundo y el número 5, el programa debe imprimir 
 //Hola Mundo 5 veces:
 
-const prompt = require("prompt-sync")({sigint: true});
+//const prompt = require("prompt-sync")({sigint: true});
 
 function nVeces (frase, n){
 
