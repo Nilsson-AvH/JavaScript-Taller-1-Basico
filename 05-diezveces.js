@@ -4,15 +4,15 @@
 
 //const prompt = require("prompt-sync")({sigint: true});
 
-function diezVeces (frase){
-
-    for(i=1;i<=10;i++){
-        console.log(`Repeticion No. ${i}: ${frase}`)
+function diezVeces(frase) {
+    let resultado = "";
+    for(let i = 1; i <= 10; i++) {
+        resultado += `Repetición No. ${i}: ${frase}\n`;
     }
-
+    return resultado;
 }
 
-console.log(`\nEl super poderoso convertidor Diez:\n`)
-let laFrase = prompt(`Digite una frase, el convertidor la repetirá 10 veces: `)
+alert("El súper poderoso convertidor Diez:");
+let laFrase = prompt("Digite una frase, el convertidor la repetirá 10 veces:");
 
-diezVeces(laFrase)
+alert(diezVeces(laFrase));

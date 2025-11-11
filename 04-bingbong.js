@@ -31,4 +31,4 @@ function validation(numero){
 console.log(`\nEl mega play BingBong:\n`)
 let elNumero = prompt(`Digite el numero a validar BingBong: `)
 
-console.log(validation(elNumero));
+validation(elNumero);
